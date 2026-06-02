@@ -183,7 +183,7 @@ def reconstruct_fingerprint(image_path, output_path):
         )
 
         enhanced = enhanced.astype(np.uint8)
-
+        enhanced = cv2.flip(enhanced, 1)
         # =================================================
         # BLACK BACKGROUND
         # =================================================
